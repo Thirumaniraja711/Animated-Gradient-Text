@@ -1,0 +1,45 @@
+/* Font StyleSheet*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:ital,wght@1,700&display=swap');
+
+/* For NO Scrolling*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+h1 {
+    font-size: 75px;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    color: transparent;
+    /* background-clip is used for place gradient background in the text & Webkit- is used for chrome extension */
+    -webkit-background-clip: text;
+    /* For animation*/
+    background-size: 500% 500%;
+    animation: tj 1.5s ease infinite;
+}
+
+@keyframes tj {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: 0%;
+    }
+
+}
